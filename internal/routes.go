@@ -2,6 +2,7 @@ package internal
 
 import (
 	"context"
+
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/httplog/v2"
 	"github.com/riandyrn/otelchi"
@@ -24,4 +25,5 @@ func NewRouter(config Config) *chi.Mux {
 	r.Get("/pong", pong())
 
 	return r
+
 }

@@ -16,4 +16,5 @@ func ParseEnv() (Config, error) {
 	}
 
 	return cfg, nil
+
 }

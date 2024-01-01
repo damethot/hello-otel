@@ -1,9 +1,10 @@
 package internal
 
 import (
-	"github.com/go-chi/httplog/v2"
 	"log/slog"
 	"time"
+
+	"github.com/go-chi/httplog/v2"
 )
 
 func NewLogger(serviceName string) *httplog.Logger {
@@ -27,4 +28,5 @@ func NewLogger(serviceName string) *httplog.Logger {
 	})
 
 	return logger
+
 }
